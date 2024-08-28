@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flower Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Roses</a></li>
+                <li><a href="#section2">Tulips</a></li>
+                <li><a href="#section3">Sunflowers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="section1">
+            <h2>Roses</h2>
+            <div class="flower">
+                <img src="purple.jpg" alt="Purple Rose">
+                <p>Purple Rose - A symbol of love and passion.</p>
+            </div>
+            <div class="flower">
+                <img src="white.jpg" alt="White Rose">
+                <p>White Rose - Represents purity and innocence.</p>
+            </div>
+        </section>
+
+        <section id="section2">
+            <h2>Tulips</h2>
+            <div class="flower">
+                <img src="flower6.jpg" alt="Yellow Tulip">
+                <p>Yellow Tulip - Associated with happiness and cheerfulness.</p>
+            </div>
+            <div class="flower">
+                <img src="purple tulip.jpg" alt="Purple Tulip">
+                <p>Purple Tulip - Symbolizes royalty and elegance.</p>
+            </div>
+        </section>
+
+        <section id="section3">
+            <h2>Sunflowers</h2>
+            <div class="flower">
+                <img src="floweer8.jpg" alt="Sunflower">
+                <p>Sunflower - Known for its bright and cheerful appearance.</p>
+            </div>
+            <div class="flower">
+                <img src="sunflower.jpg" alt="Sunflower Field">
+                <p>Sunflower Field - Represents adoration and loyalty.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Flower Gallery. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+<style>
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 3.5;
+    background-color: skyblue;
+    color: darkcyan;
+}
+.container{
+    background-color: rgba(113, 212, 230, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    background-color:rgb(107, 224, 228);
+    color: blue;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: salmon;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+.flower {
+    display: inline-block;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.flower img {
+    width: 150px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .flower {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .flower img {
+        margin-bottom: 1rem;
+    }
+}
+</style>
